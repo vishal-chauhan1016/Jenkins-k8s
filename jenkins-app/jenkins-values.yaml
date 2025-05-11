@@ -1,0 +1,18 @@
+controller:
+  adminUser: admin
+  adminPassword: admin123
+
+  serviceType: LoadBalancer  # Exposes Jenkins with external IP
+
+  # Optional: Uncomment to use Ingress instead
+  # ingress:
+  #   enabled: true
+  #   hostName: jenkins.example.com
+  #   annotations:
+  #     kubernetes.io/ingress.class: nginx
+  #   paths:
+  #     - /
+  #   tls:
+  #     - secretName: jenkins-tls
+  #       hosts:
+  #         - jenkins.example.com
